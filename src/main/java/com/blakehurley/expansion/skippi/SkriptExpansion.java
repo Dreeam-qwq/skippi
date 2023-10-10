@@ -35,5 +35,5 @@ public class SkriptExpansion extends PlaceholderExpansion
     
     public String onPlaceholderRequest(final Player p, final String identifier) {
         final String variable = (p != null) ? identifier.replace("{player}", p.getName()).replace("{uuid}", p.getUniqueId().toString()) : identifier;
-        return (Variables.getVariable(variable.toLowerCase(), null, false) != null) ? String.valueOf(Variables.getVariable(variable.toLowerCase(), null, false)) : "N/A";
+        return (Variables.getVariable(variable.toLowerCase(), null, false) != null) ? String.valueOf(Variables.getVariable(variable.toLowerCase(), null, false)) : "false";
     }}

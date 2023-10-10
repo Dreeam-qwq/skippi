@@ -24,8 +24,8 @@ jobs:
       - name: Release Skippi
         uses: marvinpinto/action-automatic-releases@master
         with:
-          title: "Skippi v1.0.0"
-          automatic_release_tag: "1.0.0"
+          title: "Skippi v1.0.1"
+          automatic_release_tag: "1.0.1"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           files: "target/*.jar"
           prerelease: false
