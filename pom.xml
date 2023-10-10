@@ -6,7 +6,7 @@
     <artifactId>skippi</artifactId>
     <version>1.0.1</version>
 
-    <name>Skippi</name>
+    <name>PAPI-Expansion-Skippi</name>
     <description>PlaceholderAPI expansion for skript placeholders</description>
 
     <properties>
