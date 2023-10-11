@@ -2,6 +2,7 @@ name: Build Skippi
 on:
   push:
     branches: [ main ]
+
 jobs:
   build:
     name: Build
