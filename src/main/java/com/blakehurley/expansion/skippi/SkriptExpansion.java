@@ -1,9 +1,9 @@
 package com.blakehurley.expansion.skippi;
 
 import ch.njol.skript.variables.Variables;
-import org.bukkit.entity.Player;
-import org.bukkit.Bukkit;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class SkriptExpansion extends PlaceholderExpansion {
