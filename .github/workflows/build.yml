@@ -14,14 +14,15 @@ jobs:
         with:
           java-version: 17
           distribution: temurin
+
       - name: Build with Maven
         run: mvn clean package
 
       - name: Release Skippi
         uses: marvinpinto/action-automatic-releases@master
         with:
-          title: "Skippi v1.0.1"
-          automatic_release_tag: "1.0.1"
+          title: "Skippi v1.0.2"
+          automatic_release_tag: "build"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           files: "target/*.jar"
           prerelease: false

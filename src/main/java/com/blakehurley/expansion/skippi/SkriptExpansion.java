@@ -28,7 +28,7 @@ public class SkriptExpansion extends PlaceholderExpansion {
     }
 
     public @NotNull String getVersion() {
-        return "1.0.1";
+        return "1.0.2";
     }
 
     public String onPlaceholderRequest(final Player p, final @NotNull String identifier) {
