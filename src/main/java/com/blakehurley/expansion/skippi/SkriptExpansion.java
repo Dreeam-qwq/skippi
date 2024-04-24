@@ -28,13 +28,15 @@ public class SkriptExpansion extends PlaceholderExpansion {
     }
 
     public @NotNull String getVersion() {
-        return "1.0.2";
+        return "1.0.3";
     }
 
     public String onPlaceholderRequest(final Player p, final @NotNull String identifier) {
         final String variable = p != null ? identifier
                 .replace("{player}", p.getName())
                 .replace("{uuid}", p.getUniqueId().toString()) : identifier;
-        return Variables.getVariable(variable.toLowerCase(), null, false) != null ? String.valueOf(Variables.getVariable(variable.toLowerCase(), null, false)) : "false";
+        final Object result = Variables.getVariable(variable.toLowerCase(), null, false);
+
+        return result != null ? result.toString() : "false";
     }
 }
